@@ -1,0 +1,185 @@
+@import url(//db.onlinewebfonts.com/c/cc6289b84357b8d34b7b79656ced51e1?family=VersatileOutline-Bold);
+@font-face {font-family: "VersatileOutline-Bold"; src: url("//db.onlinewebfonts.com/t/cc6289b84357b8d34b7b79656ced51e1.eot"); 
+    src: url("//db.onlinewebfonts.com/t/cc6289b84357b8d34b7b79656ced51e1.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/cc6289b84357b8d34b7b79656ced51e1.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/cc6289b84357b8d34b7b79656ced51e1.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/cc6289b84357b8d34b7b79656ced51e1.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/cc6289b84357b8d34b7b79656ced51e1.svg#VersatileOutline-Bold") format("svg"); }
+@font-face {
+    font-family: 'hyundai_sans_headbold';
+    src: url('./font/hyundaisanshead-bold_2-webfont.eot');
+    src: url('./font/hyundaisanshead-bold_2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./font/hyundaisanshead-bold_2-webfont.woff2') format('woff2'),
+         url('./font/hyundaisanshead-bold_2-webfont.woff') format('woff'),
+         url('./font/hyundaisanshead-bold_2-webfont.ttf') format('truetype'),
+         url('./font/hyundaisanshead-bold_2-webfont.svg#hyundai_sans_headbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'hyundai_sans_headlight';
+    src: url('/font/hyundaisanshead-light_2-webfont.eot');
+    src: url('/font/hyundaisanshead-light_2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/font/hyundaisanshead-light_2-webfont.woff2') format('woff2'),
+         url('/font/hyundaisanshead-light_2-webfont.woff') format('woff'),
+         url('/font/hyundaisanshead-light_2-webfont.ttf') format('truetype'),
+         url('/font/hyundaisanshead-light_2-webfont.svg#hyundai_sans_headlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'hyundai_sans_headmedium';
+    src: url('/font/hyundaisanshead-medium-webfont.eot');
+    src: url('/font/hyundaisanshead-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/font/hyundaisanshead-medium-webfont.woff2') format('woff2'),
+         url('/font/hyundaisanshead-medium-webfont.woff') format('woff'),
+         url('/font/hyundaisanshead-medium-webfont.ttf') format('truetype'),
+         url('/font/hyundaisanshead-medium-webfont.svg#hyundai_sans_headmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'hyundai_sans_textbold';
+    src: url('/font/hyundaisanstext-bold-webfont.eot');
+    src: url('/font/hyundaisanstext-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/font/hyundaisanstext-bold-webfont.woff2') format('woff2'),
+         url('/font/hyundaisanstext-bold-webfont.woff') format('woff'),
+         url('/font/hyundaisanstext-bold-webfont.ttf') format('truetype'),
+         url('/font/hyundaisanstext-bold-webfont.svg#hyundai_sans_textbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'hyundai_sans_textmedium';
+    src: url('/font/hyundaisanstext-medium_2-webfont.eot');
+    src: url('/font/hyundaisanstext-medium_2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/font/hyundaisanstext-medium_2-webfont.woff2') format('woff2'),
+         url('/font/hyundaisanstext-medium_2-webfont.woff') format('woff'),
+         url('/font/hyundaisanstext-medium_2-webfont.ttf') format('truetype'),
+         url('/font/hyundaisanstext-medium_2-webfont.svg#hyundai_sans_textmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'hyundai_sans_textregular';
+    src: url('/font/hyundaisanstext-regular-webfont.eot');
+    src: url('/font/hyundaisanstext-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/font/hyundaisanstext-regular-webfont.woff2') format('woff2'),
+         url('/font/hyundaisanstext-regular-webfont.woff') format('woff'),
+         url('/font/hyundaisanstext-regular-webfont.ttf') format('truetype'),
+         url('/font/hyundaisanstext-regular-webfont.svg#hyundai_sans_textregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*------GENERAL---------*/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+   }
+
+h1,h2{
+    font-family:'hyundai_sans_headbold' ;
+}
+/*------HEADER---------*/
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+header a{
+    color: white!important;
+    font-family:'hyundai_sans_textmedium';
+    font-size: 18px;
+}
+.navbar-toggler-icon .fas{color: white;}
+.navbar-brand {
+    color: #fff !important;
+    font-size: 35px;
+    font-weight: bold;
+    overflow-x: hidden;
+}
+nav .container {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    overflow-x: hidden;
+}
+nav{
+    background-color: rgba(0, 0, 0, 0.13);
+    overflow-x: hidden;
+}
+.navbar{
+    overflow-x: hidden;
+}
+.azul{border:1px solid white; border-radius: 20px;}
+/*------ BANNER ---------*/
+.video-header{height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+
+}
+.video-header-responsive{height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.wrap{
+	max-width: 960px;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	margin:auto;
+	text-align: center;
+	
+}
+.fullscreen-video-wrap{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	
+}
+.fullscreen-video-wrap video{
+	min-height: 100%;
+	min-width: 100%;
+	
+}
+.header-overlay{
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.80;}
+    .header-content{
+        z-index: 2;
+        margin-top:10%;
+        padding: 0 5rem;}
+        .header-content h1{
+            text-align: left;
+            margin-left: 200px;
+            font-size: 80px;
+            margin-bottom: 200px;
+            font-family: 'hyundai_sans_textmedium';}
+            .my-btn {
+                padding:1rem 1rem;
+            }
+            .header-content a{
+                font-size: 40px;
+                margin-top: 200px;
+                padding: 20px;
+                border: 1px solid white;
+                border-radius: 40px;
+                color: white;
+                font-family: 'hyundai_sans_headlight';
+            }
