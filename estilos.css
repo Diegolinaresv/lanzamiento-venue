@@ -87,6 +87,15 @@
 h1,h2{
     font-family:'hyundai_sans_headbold' ;
 }
+a.btn.btn-outline-primary.my-btn.mt-4 {
+    
+    border-color: white!important;
+    border-width: 1px 0px 1px 0px;
+}
+a.btn.btn-outline-primary.my-btn.mt-4:hover{
+    background-color: #a6ff0052;
+    border-color: #a6ff0052!important;
+}
 /*------HEADER---------*/
 header {
     width: 100%;
@@ -113,13 +122,13 @@ nav .container {
     overflow-x: hidden;
 }
 nav{
-    background-color: rgba(0, 0, 0, 0.13);
     overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.13);
 }
 .navbar{
     overflow-x: hidden;
 }
-.azul{border:1px solid white; border-radius: 20px;}
+.azul{border:1px solid white; border-radius: 0px;}
 /*------ BANNER ---------*/
 .video-header{height: 100vh;
     display: flex;
@@ -127,10 +136,14 @@ nav{
     color: #fff;
 
 }
-.video-header-responsive{height: 100vh;
+.video-header-responsive{
+  width: 100%;
     display: flex;
     align-items: center;
     color: #fff;
+}
+.video-header-responsive img{
+  max-width: 100%;
 }
 .wrap{
 	max-width: 960px;
@@ -163,7 +176,7 @@ nav{
 	opacity: 0.80;}
     .header-content{
         z-index: 2;
-        margin-top:10%;
+        margin-top:30%;
         padding: 0 5rem;}
         .header-content h1{
             text-align: left;
@@ -175,11 +188,921 @@ nav{
                 padding:1rem 1rem;
             }
             .header-content a{
-                font-size: 40px;
-                margin-top: 200px;
+                font-size: 25px;
+                margin-top: 300px;
                 padding: 20px;
                 border: 1px solid white;
-                border-radius: 40px;
+                border-radius: 0px;
                 color: white;
-                font-family: 'hyundai_sans_headlight';
+                font-family: 'hyundai_sans_headbold' ;
             }
+
+/**Slider section**/
+.info-slider{
+    background: #262B2E;
+    color: white;
+    padding-top: 150px;
+    padding-bottom: 157px;
+    }
+.info-slider h2{
+    font-size: 40px;
+}
+.info-slider p{
+text-align: justify;
+padding-top:25px ;
+padding-left: 650px;
+padding-right: 650px;
+font-family: 'hyundai_sans_textregular';
+align-items: left;
+font-size: 20px;
+    }
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+  
+/**Section 2**/
+.sect2{
+    background-image: url(/img/Seccion2-escritorio.png);
+    min-width: 100%;
+    min-height: 700px;
+    background-repeat: no-repeat;
+    padding: 100px;
+}
+.content-sect2{
+    max-width: 600px;
+}
+.sect2 h2{
+    color: white;
+}
+.sect2 p{
+    color: white;
+    font-family: 'hyundai_sans_textregular';
+    text-align: justify;
+    font-size: 20px;
+}
+  
+
+/**section 3**/
+.sect3{
+    width: 100%;
+    max-width: 100%;
+}
+figure{
+    width: 100%;
+    position: relative;
+}
+figure .carro-tool{
+    width: 100%;
+    vertical-align: top;
+
+}
+figure .icono{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    color: white;
+    font-size: 60px;
+    cursor: pointer;
+}
+figure .tooltip{
+    top: 20%;
+    left: 47%;
+    position: absolute;
+    background-color: red;
+    width: 300px;
+    z-index: 1000;
+    opacity: 0;
+    transition: .3s ease all;
+    transform: translateY(10px);
+}
+figure .activo{
+    opacity: 1;
+}
+figure .tooltip .thumb{
+    width: 100%;
+}
+figure .tooltip .thumb img{
+    width: 100%;
+}
+figure .icono2{
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    color: white;
+    font-size: 60px;
+    cursor: pointer;
+}
+figure .tooltip2{
+    top: 40%;
+    left: 20%;
+    position: absolute;
+    width: 300px;
+    z-index: 2000;
+    opacity: 0;
+    transition: .3s ease all;
+    transform: translateY(10px);
+}
+figure .tooltip2 .thumb{
+    width: 100%;
+}
+figure .tooltip2 .thumb img{
+    width: 100%;
+}
+figure .activo2{
+    opacity: 1;
+}
+figure .icono3{
+    position: absolute;
+    top: 63%;
+    left: 67%;
+    color: white;
+    font-size: 60px;
+    cursor: pointer;
+}
+figure .tooltip3{
+    top: 40%;
+    left: 20%;
+    position: absolute;
+    width: 300px;
+    z-index: 2000;
+    opacity: 0;
+    transition: .3s ease all;
+    transform: translateY(10px);
+}
+figure .tooltip3 .thumb{
+    width: 100%;
+}
+figure .tooltip3 .thumb img{
+    width: 100%;
+}
+figure .activo3{
+    opacity: 1;
+}
+.texto-interno{
+    margin-top: -350px;
+    position: relative;
+    color: white;
+    padding-left: 100px;
+    max-width: 600px;
+}
+.texto-interno p{
+    color: white;
+    font-family: 'hyundai_sans_textregular';
+    text-align: justify;
+    font-size: 20px;
+}
+
+/** Rines **/
+.sect4{
+    background-image: url(/img/Seccion4-Fondo.png);
+    background-size: contain;
+    margin-top: 40px;
+    padding-top: 90px;
+}
+
+.texto-interno-rines{
+    display: inline-block;
+    padding-left: 100px;
+    max-width: 600px;
+    position: absolute;
+    margin-top: 200px;
+}
+.texto-interno-rines h2{
+    color: #262B2E;
+    
+
+}
+.texto-interno-rines p{
+    color: #262B2E;
+    font-family: 'hyundai_sans_textregular';
+    text-align: justify;
+    font-size: 20px;
+}
+.rin{
+    display: inline-block;
+    padding: 40px;
+}
+.rin p{
+    text-align: center;
+    color: #262B2E;
+    font-family:'hyundai_sans_headbold';
+    font-size: 30px;
+    padding: 20px;
+
+}
+.rin img{
+    width: 450px;
+    cursor: pointer;
+}
+.rines{
+    display: inline-block;
+    margin-left: 700px;
+}
+
+/** Section 5 **/
+.sect5{
+    background: url(/img/Seccion5-Fondo.png);
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px;
+}
+.sect5 .verde{
+    color:#A5FF00;
+    font-size: 90px;
+
+}
+/** Section 6 **/
+.sect6{
+    background: url(/img/Seccion6-Fondo.png);
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px;
+}
+.sect6 .titulo-sect6{
+  color: #9DF608;
+  
+}
+.divisor-titulo{
+  color: #9DF608;
+  margin-left: 42%;
+  width: 320px;
+  border: 3px solid#9DF608;
+}
+.sect6-p{
+  font-family: 'hyundai_sans_textregular';
+  font-size: 20px;
+  justify-content: left;
+  text-align: justify;
+  margin-left: 800px;
+  max-width: 1000px;
+}
+.caracteristica{
+  display: inline-block;
+  justify-content: right;
+  padding: 20px;
+  text-align: center;
+}
+.caracteristica .medida{
+  font-size: 14px;
+  text-align: left;
+}
+.caracteristica h3{
+  font-size: 18px;
+}
+.caracteristica p{
+  font-size: 30px;
+}
+.caracteristica-contenedor{
+  text-align: right;
+  margin-right: 300px;
+}
+.caracteristica .motor{
+  margin-top: 42px;
+}
+
+/** Section 7**/
+.sect7{
+  width: 100%;
+  height: 100vh;
+}
+.icono4:hover{
+  color:#9DF608;
+}
+figure .icono4{
+  position: absolute;
+  top: 73%;
+  left: 45%;
+  color: white;
+  font-size: 60px;
+  cursor: pointer;
+}
+figure .tooltip4{
+  top: 40%;
+  left: 60%;
+  position: absolute;
+  width: 500px;
+  z-index: 2000;
+  opacity: 0;
+  transition: .3s ease all;
+  transform: translateY(10px);
+}
+figure .tooltip4 .thumb{
+  width: 100%;
+}
+figure .tooltip4 .thumb img{
+  width: 100%;
+}
+figure .activo4{
+  opacity: 1;
+}
+.tooltip4 .titulo{
+  color: white;
+  text-align: center;
+  font-family:'hyundai_sans_headbold';
+  margin-top: 20px;
+}
+.info hr{
+  color: white;
+  width: 70%;
+  margin-left: 80px;
+}
+.icono5:hover{
+  color:#9DF608;
+}
+figure .icono5{
+  position: absolute;
+  top: 39%;
+  left: 50%;
+  color: white;
+  font-size: 60px;
+  cursor: pointer;
+}
+figure .tooltip5{
+  top: 40%;
+  left: 60%;
+  position: absolute;
+  width: 500px;
+  z-index: 2000;
+  opacity: 0;
+  transition: .3s ease all;
+  transform: translateY(10px);
+}
+figure .tooltip5 .thumb{
+  width: 100%;
+}
+figure .tooltip5 .thumb img{
+  width: 100%;
+}
+figure .activo5{
+  opacity: 1;
+}
+.icono6:hover{
+  color:#9DF608;
+}
+figure .icono6{
+  position: absolute;
+  top: 61%;
+  left: 50%;
+  color: white;
+  font-size: 60px;
+  cursor: pointer;
+}
+figure .tooltip6{
+  top: 40%;
+  left: 60%;
+  position: absolute;
+  width: 500px;
+  z-index: 2000;
+  opacity: 0;
+  transition: .3s ease all;
+  transform: translateY(10px);
+}
+figure .tooltip6 .thumb{
+  width: 100%;
+}
+figure .tooltip6 .thumb img{
+  width: 100%;
+}
+figure .activo6{
+  opacity: 1;
+}
+.icono7:hover{
+  color:#9DF608;
+}
+figure .icono7{
+  position: absolute;
+  top: 48%;
+  left: 20%;
+  color: white;
+  font-size: 60px;
+  cursor: pointer;
+}
+figure .tooltip7{
+  top: 40%;
+  left: 40%;
+  position: absolute;
+  width: 500px;
+  z-index: 2000;
+  opacity: 0;
+  transition: .3s ease all;
+  transform: translateY(10px);
+}
+figure .tooltip7 .thumb{
+  width: 100%;
+}
+figure .tooltip7 .thumb img{
+  width: 100%;
+}
+figure .activo7{
+  opacity: 1;
+}
+.icono8:hover{
+  color:#9DF608;
+}
+figure .icono8{
+  position: absolute;
+  top: 42%;
+  left: 30%;
+  color: white;
+  font-size: 60px;
+  cursor: pointer;
+}
+figure .tooltip8{
+  top: 40%;
+  left: 60%;
+  position: absolute;
+  width: 500px;
+  z-index: 2000;
+  opacity: 0;
+  transition: .3s ease all;
+  transform: translateY(10px);
+}
+figure .tooltip8 .thumb{
+  width: 100%;
+}
+figure .tooltip8 .thumb img{
+  width: 100%;
+}
+figure .activo8{
+  opacity: 1;
+}
+.icono9:hover{
+  color:#9DF608;
+}
+figure .icono9{
+  position: absolute;
+  top: 53%;
+  left: 24%;
+  color: white;
+  font-size: 60px;
+  cursor: pointer;
+}
+figure .tooltip9{
+  top: 70%;
+  left: 60%;
+  position: absolute;
+  width: 500px;
+  z-index: 2000;
+  opacity: 0;
+  transition: .3s ease all;
+  transform: translateY(10px);
+}
+figure .tooltip9 .thumb{
+  width: 100%;
+}
+figure .tooltip9 .thumb img{
+  width: 100%;
+}
+figure .activo9{
+  opacity: 1;
+}
+
+.texto-interno-sect7{
+  position: absolute;
+  z-index: 200;
+  color: white;
+  padding-top: 100px;
+  margin-left: 1200px;
+  max-width: 500px;
+}
+.texto-interno-sect7 h2{
+  justify-content: left;
+  align-items: left;
+}
+.texto-interno-sect7 p{
+  text-align: justify;
+  font-family: 'hyundai_sans_textregular';
+  font-size: 15px;
+
+}
+
+/** section 8 **/
+.sect8{
+  margin-top: 345px;
+  background-image: url(/img/Seccion8-Fondo.png);
+  background-position: center;
+  width: 100%;
+  height: 95vh;
+  padding-top: 200px;
+  background-repeat: no-repeat;
+}
+.texto-interno-sect8{
+  margin-left: 100px;
+  max-width: 500px;
+}
+.sect8 h2{
+  font-size: 35px;
+  margin-bottom: 45px;
+  color:#262B2E;
+}
+.sect8 p{
+  text-align: justify;
+  font-family: 'hyundai_sans_textregular';
+  color:#262B2E;
+  font-size: 15px;
+}
+.texto-interno-sect8-2{
+  margin-left: 100px;
+  max-width: 700px;
+}
+.texto-interno-sect8-2 h2{
+  font-size: 35px;
+  margin-bottom: 0px;
+  margin-top: 140px;
+  color:#262B2E;
+}
+
+/** Section 9 **/
+.sect9{
+  background: url(/img/Seccion9-Fondo.png);
+  color: white;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  padding-top: 100px;
+  margin-top: -113px;
+}
+.sect9 h2{
+  padding-left: 100px;
+}
+.sect9 .verde{
+  color:#A5FF00;
+  font-size: 90px;
+
+}
+
+.media-scroller {
+  --_spacer: var(--size-3);
+  display: grid;
+  gap: var(--_spacer);
+  grid-auto-flow: column;
+  grid-auto-columns: 21%;
+
+  padding: 0 var(--_spacer) var(--_spacer);
+
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+.media-scroller--with-groups {
+  grid-auto-columns: 80%;
+}
+
+.media-group {
+  display: grid;
+  gap: var(--_spacer);
+  grid-auto-flow: column;
+}
+
+.media-element {
+  display: grid;
+  grid-template-rows: min-content;
+  gap: var(--_spacer);
+  padding: var(--_spacer);
+  background: var(--surface-2);
+  border-radius: var(--radius-2);
+  box-shadow: var(--shadow-2);
+}
+
+.media-element > img {
+  inline-size: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.snaps-inline {
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: var(--_spacer, 1rem);
+}
+
+.snaps-inline > * {
+  scroll-snap-align: start;
+}
+
+/* general styling */
+
+.container {
+  inline-size: min(100% - 4rem, 70rem);
+  margin-inline: auto;
+}
+
+.flow {
+  display: grid;
+  gap: var(--size-3);
+}
+
+.page-header {
+  padding-block: var(--size-9);
+  margin-block-end: var(--size-9);
+  background: var(--gradient-16);
+  color: var(--gray-0);
+  box-shadow: var(--shadow-2);
+}
+
+.page-title {
+  font-size: var(--font-size-fluid-3);
+}
+
+.page-subtitle {
+  font-size: var(--font-size-fluid-1);
+}
+
+.section-title {
+  padding-inline-start: var(--size-6);
+  margin-block: var(--size-9) var(--size-3);
+}
+
+/** Section 11 **/
+.sect11{
+  background-image: url(/img/Seccion12-Fondo.png);
+  width: 100%;
+  height: 677px;
+  margin-top: -16px;
+  color: white;
+  padding-top: 100px;
+}
+.sect11 span{
+  color: #9DF608;
+}
+.sect11 hr{
+  width: 10%;
+  margin-left: 100px;
+}
+.sect11 h2,.precio{
+  margin-left: 100px;
+}
+.sect11 h2{
+  font-size: 40px;
+}
+.sect11 .btn-outline-primary{
+  border-color: 1px solid white!important;
+  border-width: 1px  solid white!important;
+  left: 100px;
+}
+.sect11 a.btn.btn-outline-primary.btn-reserva.my-btn.mt-4 {
+  margin-left: 50%;
+  margin-top: 25%;
+  color: white;
+  font-size: 20px;
+}
+.sect11 a.btn.btn-outline-primary.btn-reserva.my-btn.mt-4:hover{
+  background-color: transparent;
+}
+.cta{
+  margin-top: 340px;
+}
+
+/** Section 12 **/
+
+.sect12{
+  background-color:#262B2E;
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+form{
+  margin-left: 100px;
+  margin-right: 250px;
+}
+.sect12 h2{
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
+input{
+  border-width: 0px 0px 2px 0px;
+  border-color: white;
+  background-color: transparent;
+  padding: 30px;
+  font-family: 'hyundai_sans_textregular';
+  color: white;
+  margin-left: 90px!important;
+}
+input::placeholder{
+  font-family: 'hyundai_sans_textregular';
+  color: white;
+  font-size: 18px;
+  padding-bottom: 100px!important;
+} 
+input[type=submit]{
+  border-width: 2px 2px 2px 2px;
+  position: absolute;
+  padding: 15px;
+}
+
+.terminos{
+  margin-top: 75px;
+  color: white;
+  max-width: 1400px;
+  text-align: justify;
+}
+.terminos a{
+  color: white;
+  text-decoration: none;
+}
+.terminos a:hover{
+  color: white;
+  text-decoration: none;
+}
+.terminos p{
+  margin-left: 100px;
+  margin-top: 20px;
+}
+.logo-final{
+  text-align: center;
+}
+.logo-final img{
+  width: 300px;
+}
+.figure-celular{max-width: 100%!important;overflow: hidden;}
+.figure-escritorio{min-width: 100%!important;}
+@media(max-width:430px){
+  .video-header{display: none;}
+    a.btn.btn-outline-primary.my-btn.mt-4{margin-top: 95%!important;}
+    .header-content h1{font-size: 30px!Important; margin-top: 200px!Important;text-align: center; margin-bottom: 50px;margin-left: 0px;}
+    .header-content a{font-size: 20px; padding: 15px;}
+    .navbar-brand img{width: 150px; height: 50px;}
+    div#navbarSupportedContent {background-color: #00000096;}
+    .azul{border-color: transparent;}
+    .info-slider{margin-top:690px;padding-top: 100px;padding-bottom: 100px;}
+    .info-slider-responsive{margin-top:0!important;}
+    .info-slider h2{font-size: 18px;}
+    .info-slider p{padding-left: 10px;padding-right: 10px;font-size: 14px;}
+    .sect2{padding: 10px;background-image: url(/img/Seccion2-movil.png)!important;background-size:cover;background-attachment:inherit;background-position: right;}
+    .sect2 h2{ font-size: 18px;}
+    .sect2 p{ font-size: 14px;}
+    .sect3{}
+    figure .icono,.icono2,.icono3{font-size: 15px!important;}
+    figure .tooltip, .tooltip2, .tooltip3{width: 100px!important;}
+    figure .icono{left:54%;}
+    .texto-interno{margin-top: -20px;padding: 10px;background-color: #262B2E;padding-top: 20px;}
+    .texto-interno h2{font-size: 18px;}
+    .texto-interno p{font-size: 14px;}
+    .sect4{background-image: url(/img/Seccion4-movil.png);background-size: contain;margin-top: 0px;padding-top: 0px;}
+    .texto-interno-rines{ display: inline-block; padding-left: 10px;padding-right: 10px;margin-top: 100px;}
+  .texto-interno-rines h2{font-size: 18px; }
+  .texto-interno-rines p{font-size: 14px; } 
+  .rin{display: inline-block;padding: 0px; }
+  .rin p{font-size: 14px;padding: 20px;}
+  .rin img{ width: 150px;cursor: pointer;}
+  .rines{ display: inline-block;margin-top: 200px;margin-left: 0px; }
+  .sect5 h2{font-size: 18px;}
+  .sect5 .verde{font-size: 28px}
+  .sect6{background-image: url(/img/Seccion6-movil.png);background-position: center;}
+  .divisor-titulo{margin-left: 10%;border: 1px solid#9DF608;}
+  .sect6-p{font-size: 14px;justify-content: left;text-align: justify;margin-left: 0px; padding-left: 10px; }
+  .caracteristica{display: inline-block;justify-content: left;padding: 10px; text-align: left;}
+  .caracteristica h2{font-size: 15px;}
+  .caracteristica .medida{font-size: 10px;text-align: left;}
+  .caracteristica h3{font-size: 9px;text-align: left;}
+  .caracteristica p{font-size: 8px;}
+  .caracteristica-contenedor{ text-align: left ;margin-right: 0px; }
+  .caracteristica .motor{ margin-top: 0px;}
+  figure .icono4,.icono5,.icono6,.icono7,.icono8, .icono9{font-size: 14px!important;}
+  figure .tooltip4, .tooltip5,.tooltip6,.tooltip7,.tooltip8,.tooltip9{width: 110px!important;}
+  figure .tooltip6{left:55%!important;top:50%;}
+  figure .tooltip4{left:55%!important;}
+  .info .titulo{font-size: 14px;}
+  .info hr{ color: white;width: 70%;margin-left: 20px;}
+  figure .tooltip8{top:10%!important;left:20%!important;}
+  figure .tooltip7{left:15%!important;top:10%!important;}
+  figure .tooltip9{left: 10%!important;top:60%!important;}
+  .texto-interno-sect7{background-color: #262B2E; margin-top: 280px;padding: 10px;margin-left: 00px;}
+  .texto-interno-sect7 h2{font-size: 18px;}
+  .texto-interno-sect7 p{font-size: 14px; }
+  .sect8{background-image: url(/img/Seccion8-movil.png);background-size: contain;margin-top: 0px;width: 100%;height: 95vh;padding-top: 0px;background-repeat: no-repeat;}
+  .texto-interno-sect8{padding: 10px;margin-left: 0px;}
+  .sect8 h2{font-size: 18px;margin-bottom: 25px;}
+  .sect8 p{font-size: 15px;}
+  .texto-interno-sect8-2{padding: 10px;margin-left: 0px;max-width: 700px;}
+  .texto-interno-sect8-2 h2{font-size: 18px;margin-bottom: 0px; margin-top: 190px;}
+  .sect9 .verde{font-size: 28px;}
+  .sect9 h2{font-size: 18px;}
+  .sect11{background-image: url(/img/Seccion12-movil.png);background-size: contain;width: 100%; height: 357px; margin-top: -16px;color: white;padding-top: 50px;}
+  .sect11 hr{ width: 10%;margin-left: 0px;}
+  .sect11 h2,.precio{ padding: 10px;margin-left: 00px;text-align: center!important;}
+  .sect11 h2{font-size: 30px;}
+  .sect11 .btn-outline-primary{left: 00px;}
+  .sect11 a.btn.btn-outline-primary.btn-reserva.my-btn.mt-4 {margin-left: 0%; margin-top: -20%;color: white;font-size: 20px;}
+  .cta{margin-top: -230px;margin-left: 100px;}
+  form{margin-left: 0px;margin-right: 0px;}
+  .sect12 h2{text-align: center!important;margin-left: 0px;margin-bottom: 25px; font-size: 20px;}
+  input{margin-left: 70px!important;}
+  input[type=submit]{border-width: 2px 2px 2px 2px;position: relative!important;padding: 15px;margin-top: 50px;}
+  .terminos{margin-top: 55px;color: white;max-width: 1400px;text-align: justify;text-align: center!important;}
+  input[type=checkbox]{ margin-left: 0px!important; margin-top: 0px!important;}
+  .terminos a{font-size: 12px;}
+  .terminos p{ margin-left: 0px; padding: 10px;margin-top: 20px;font-size: 12px;}
+  .logo-final img{width: 150px;}
+  .figure-celular{min-width: 100%;}
+  }
+    @media (max-width:768px){
+      .video-header{display: none;}
+      .figure-celular{display: none;}
+    }
+
+    @media(min-width:768px) and (max-width:990px){
+      .video-header-responsive{display: none;} 
+      .figure-celular{display: none;}
+    }
+    @media(min-width:990px) and (max-width:1400px){
+      .video-header-responsive{display: none;}
+      .figure-celular{display: none;}
+    }
+    @media(min-width:1400px) and (max-width:1900px){
+      .video-header-responsive{display: none;}
+      .figure-celular{display: none;}
+    }
+    @media(min-width:1900px){
+      .video-header-responsive{display: none;}
+      .figure-celular{display: none;}
+    }
