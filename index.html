@@ -14,6 +14,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- SLIDER JS -->
+     <script type="text/javascript" src="scripts/modernizr-2.7.1.js"></script>
 </head>
 <body>
     <header>
@@ -34,7 +36,7 @@
                     <a class="nav-link" href="#internos">Interior</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#precios">Precio</a>
+                    <a class="nav-link" href="#precio">Precio</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Ficha Técnica</a>
@@ -79,55 +81,48 @@
 
        <!-- Slider -->
 
-       <div class="title-section info-slider">
-           <h2 style="text-align: center;"> Vibra con lo que Eres.</h2> 
-            <p>Es hora de que definas tu proprio ritmo. En días llenos
-                de cambios, en la ciudad o de paseo, solo una SUV que VIBRA contigo puede llevarte a tu máximo potencial.</p>
-    </div>
-<!-- Slideshow container -->
-<div class="slideshow-container">
+       <div class=" info-slider">
 
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="/img/Imagen-Carrusel-1.png" style="width:100%">
-    <div class="text">Caption Text</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="/img/Imagen-Carrusel-1.png" style="width:100%">
-    <div class="text">Caption Two</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="/img/Imagen-Carrusel-1.png" style="width:100%">
-    <div class="text">Caption Three</div>
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
+        <!-- Slide container -->
+        <section class="titulo-1">
+          <h2 style="text-align: center;"> Vibra con lo que Eres.</h2>
+          <p>Es hora de que definas tu proprio ritmo. En días llenos
+             de cambios, en la ciudad o de paseo, solo una SUV que VIBRA contigo puede llevarte a tu máximo potencial.
+          </p>
+        </section>
+          
+        <section class="slider-slider"><div class="slider w-slider" data-animation="slide" data-duration="500" data-hide-arrows="1" data-infinite="1">
+          <div class="mask w-slider-mask">
+             <div class="slide w-slide"><img class="img" data-ix="new-interaction-2" src="/img/Imagen-Carrusel-1.png"></div>
+             <div class="slide w-slide"><img class="img" data-ix="new-interaction-2" src="/img/ImagenCarrusel2.png"></div>
+             <div class="slide w-slide"><img class="img" data-ix="new-interaction-2" src="/img/ImagenCarrusel3.png"></div>
+          </div>
+          <div class="left-arrow w-slider-arrow-left">
+             <div class="w-icon-slider-left"></div>
+          </div>
+          <div class="right-arrow w-slider-arrow-right">
+             <div class="w-icon-slider-right"></div>
+          </div>
+          <div class="slide-nav w-round w-slider-nav"></div>
+       </div></section>
 
 
-    <div class="title-section info-slider info-slider-responsive">
-      <h2 style="text-align: center;"> Colorea la ciudad, con tu <br>
-        propia variedad de colores.</h2> 
-       <p>
-        En medio de momentos de paz con amigos, durante el día o toda la emoción de conocer gente nueva por la noche, 
-        la Venue enriquece todos los aspectos de su experiencia diaria con combinaciones de color vibrantes y atractivos 
-        que capturan y atraen todas las miradas.</p>
-</div>
+      <section class="titulo-2">
+      <div class=" info-slider info-slider-responsive">
+            <h2 style="text-align: center;"> Colorea la ciudad, con tu <br>
+              propia variedad de colores.</h2> 
+             <p>
+              En medio de momentos de paz con amigos, durante el día o toda la emoción de conocer gente nueva por la noche, 
+              la Venue enriquece todos los aspectos de su experiencia diaria con combinaciones de color vibrantes y atractivos 
+              que capturan y atraen todas las miradas.</p>
+      </div>
+    </section>
+        <!-- Slide container -->
+        
+     </div>
+
+
+
 
  <!-- Section 2 -->
  <section class="sect2">
@@ -159,7 +154,7 @@ Y con una amplia gama de tecnología avanzada de su lado, VENUE mantiene la cone
     </figcaption>
     <figcaption>
       <i class="icono2 fas fa-plus-circle" id="icono2"></i>
-        <div class="tooltip2 activo2" id="tooltip2">
+        <div class="tooltip2 activo" id="tooltip2">
           <div class="thumb">
               <img src="/img/Seccion3-ImagenInterna1.png" alt="">
           </div>
@@ -207,11 +202,45 @@ Y con una amplia gama de tecnología avanzada de su lado, VENUE mantiene la cone
 
 
  <!-- Section 5 -->
-<section class="sect5">
+<section class="sect5" id="externos">
    
        <h2 style="text-align: center;"> Exterior único de</h2> 
        <h2 class="verde" style="text-align: center;"> VENUE</h2> 
 
+       <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'item1')" id="defaultOpen">Limpiaparabrisas trasero.</button>
+        <button class="tablinks" onclick="openCity(event, 'item2')">Luces traseras con diseño lenticular.</button>
+        <button class="tablinks" onclick="openCity(event, 'item3')">Sensor de proximidad.</button>
+        <button class="tablinks" onclick="openCity(event, 'item4')">Espejos retrovisores eléctricos.</button>
+        <button class="tablinks" onclick="openCity(event, 'item5')">Luces de circulación diurna (DRL) LED.</button>
+      </div>
+      
+      <div id="item1" class="tabcontent">
+        <img src="/img/sect-5-1.png" alt="">
+        <h3>Limpiaparabrisas trasero</h3>
+      </div>
+      
+      <div id="item2" class="tabcontent">
+        <img src="/img/sect-5-2.png" alt="">
+        <h3>Luces traseras con diseño lenticular.</h3>
+      </div>
+      
+      <div id="item3" class="tabcontent">
+        <img src="/img/sect-5-5.png" alt="">
+        <h3>Sensor de proximidad</h3>
+      </div>
+
+      <div id="item4" class="tabcontent">
+        <img src="/img/sect-5-3.png" alt="">
+        <h3>Retrovisores eléctricos Eléctricos + Color de la carrocería <br>+ Direccionales incorporadas + Calefacción</h3>
+      </div>
+
+      <div id="item5" class="tabcontent">
+        <img src="/img/sect-5-4.png" alt="">
+        <h3>Luces de circulación diurna (DRL) LED y
+          luz de giro. </h3>
+      </div>
+      
 </section>
 
  <!-- Section 6 -->
@@ -319,7 +348,7 @@ Desde las actividades cotidianas en el lugar de trabajo hasta la diversión de f
       </figcaption>
       <figcaption>
         <i class="icono7 fas fa-plus-circle" id="icono7"></i>
-          <div class="tooltip7 activo7" id="tooltip7">
+          <div class="tooltip7 activo" id="tooltip7">
             <div class="thumb">
                 <img src="/img/controles.png" alt="">
             </div>
@@ -327,7 +356,7 @@ Desde las actividades cotidianas en el lugar de trabajo hasta la diversión de f
       </figcaption>
       <figcaption>
         <i class="icono8 fas fa-plus-circle" id="icono8"></i>
-          <div class="tooltip8 activo8" id="tooltip8">
+          <div class="tooltip8 activo" id="tooltip8">
             <div class="thumb">
                 <img src="/img/pantalla-supervision.png" alt="">
             </div>
@@ -335,7 +364,7 @@ Desde las actividades cotidianas en el lugar de trabajo hasta la diversión de f
       </figcaption>
       <figcaption>
         <i class="icono9 fas fa-plus-circle" id="icono9"></i>
-          <div class="tooltip9 activo9" id="tooltip9">
+          <div class="tooltip9 activo" id="tooltip9">
             <div class="thumb">
                 <img src="/img/airbag.png" alt="">
             </div>
@@ -363,95 +392,46 @@ Desde las actividades cotidianas en el lugar de trabajo hasta la diversión de f
        </section>
 
     <!-- Section 9-->
-  <section class="sect9">
+  <section class="sect9" id="internos">
    
        <h2 style="text-align: left;"> Interior único de</h2> 
        <h2 class="verde" style="text-align: left;"> VENUE</h2> 
+        <div class="grid-container">
+           <main class="grid-item main">
+           <div class="items">
+              <div class="item item1">
+                 <img src="/img/sect9-4.png" alt="">
+                 <p style="text-align: center;">Iluminación en el maletero</p>
+              </div>
+              <div class="item item2">
+                 <img src="/img/sect9-5.png" alt="">
+                 <p style="text-align: center;">botón de encendido y llave smart</p>  
+              </div>
+              <div class="item item3">
+                 <img src="/img/sect-9-2.png" alt="">
+                 <p style="text-align: center;">Sistema de audio con Pantalla de 8”</p>
+              </div>
+              <div class="item item4">
+                 <img src="/img/sect9-4.png" alt="">
+                 <p style="text-align: center;">Pantalla 8” táctil + Android Auto y CarPlay <br>+ Bluetooth con reconocimiento de voz + USB</p>
+              </div>
+              <div class="item item5">
+                 <img src="/img/sect9-3.png" alt="">
+                 <p style="text-align: center;">Asientos traseros plegables 60:40 para maximizar <br>la utilidad y transportar todas sus aventuras. </p>
+              </div>
+              <div class="item item6">
+                <img src="/img/isoft.png" alt="">
+                <p style="text-align: center;">Sistema ISOFIX (anclaje para sillas de bebé)</p>
+             </div>
+           </div>
+           <div class="grid-item title">
+              <h3 style="text-align: center;">Arrastra horizontal y descubre.</h3>
+           </div>
+        </div>
+  </section>
+        
 
-       <div class="media-scroller snaps-inline">
-        <div class="media-element">
-          <img src="https://images.unsplash.com/photo-1641353989082-9b15fa661805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400" alt="">
-          <p class="title">Short title</p>
-        </div>
-        <div class="media-element">
-          <img src="https://images.unsplash.com/photo-1642190672487-22bde32965f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400" alt="">
-          <p class="title">A longer title here</p>
-        </div>
-        <div class="media-element">
-          <img src="https://images.unsplash.com/photo-1641841344411-49dbd02896f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400" alt="">
-          <p class="title">An even longer title on this one</p>
-        </div>
-        <div class="media-element">
-          <img src="https://images.unsplash.com/photo-1643223723262-7ce785730cf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400" alt="">
-          <p class="title">A dog that's blinking?</p>
-        </div>
-        <div class="media-element">
-          <img src="https://images.unsplash.com/photo-1640938776314-4d303f8a1380?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400" alt="">
-          <p class="title">Chair</p>
-        </div>
-        <div class="media-element">
-          <img src="https://images.unsplash.com/photo-1641259041823-e09935369105?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400" alt="">
-          <p class="title">Ut enim ad minim veniam</p>
-        </div>
-        <div class="media-element">
-          <img src="https://images.unsplash.com/photo-1642543492481-44e81e3914a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400" alt="">
-          <p class="title">Duis aute irure dolor</p>
-        </div>
-        <div class="media-element">
-          <img src="https://images.unsplash.com/photo-1641118961077-440391095cdc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400" alt="">
-          <p class="title">Cillum dolore eu</p>
-        </div>
-        <div class="media-element">
-          <img src="https://images.unsplash.com/photo-1640767014413-b7d27c58b058?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400" alt="">
-          <p class="title"></p>
-        </div>
-        <div class="media-element">
-          <img src="https://images.unsplash.com/photo-1640948612546-3b9e29c23e98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400" alt="">
-          <p class="title">Excepteur sint occaecat cupidatat non proident</p>
-        </div>
-        <div class="media-element">
-          <img src="https://images.unsplash.com/photo-1642484865851-111e68695d71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400" alt="">
-          <p class="title">At lectus urnaVestibulum</p>
-        </div>
-        <div class="media-element">
-          <img src="https://images.unsplash.com/photo-1642237778207-24985a0bf876?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400" alt="">
-          <p class="title">Vestibulum</p>
-        </div>
-        <div class="media-element">
-          <img src="https://images.unsplash.com/photo-1642177584449-fa0b017dccc7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400" alt="">
-          <p class="title">Adipiscing tristique risus nec feugiat</p>
-        </div>
-        <div class="media-element">
-          <img src="https://images.unsplash.com/photo-1643249960396-d39d2a63ce8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0Mw&ixlib=rb-1.2.1&q=80&w=400" alt="">
-          <p class="title">Rutrum tellus pellentesque eu tincidunt</p>
-        </div>
-        <div class="media-element">
-          <img src="https://images.unsplash.com/photo-1641424222187-1c336d21804c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400" alt="">
-          <p class="title">Bibendum enim</p>
-        </div>
-        <div class="media-element">
-          <img src="https://images.unsplash.com/photo-1640998483268-d1faffa789ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODkwNA&ixlib=rb-1.2.1&q=80&w=400" alt="">
-          <p class="title">Amet commodo</p>
-        </div>
-        <div class="media-element">
-          <img src="https://images.unsplash.com/photo-1642034451735-2a8df1eaa2c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg4OQ&ixlib=rb-1.2.1&q=80&w=400" alt="">
-          <p class="title">A erat nam at lectus</p>
-        </div>
-        <div class="media-element">
-          <img src="https://images.unsplash.com/photo-1640808238224-5520de93c939?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg4OQ&ixlib=rb-1.2.1&q=80&w=400" alt="">
-          <p class="title">Pellentesque eu tincidunt tortor aliquam nulla</p>
-        </div>
-        <div class="media-element">
-          <img src="https://images.unsplash.com/photo-1643039952431-38adfa91f320?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400" alt="">
-          <p class="title">Quam adipiscing vitae</p>
-        </div>
-        <div class="media-element">
-          <img src="https://images.unsplash.com/photo-1643148636637-58b3eb95cdad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400" alt="">
-          <p class="title">Fermentum</p>
-        </div>
-      </div>
        
-</section>
 
     <!-- Section 10-->
     <figure class="figure-escritorio">
@@ -464,7 +444,7 @@ Desde las actividades cotidianas en el lugar de trabajo hasta la diversión de f
     
     <!-- Section 11-->
  
-<section class="sect11">
+<section class="sect11" id="precio">
 
   <h2 style="text-align: left;"> Precio Sugerido</h2> 
   <hr>
@@ -477,7 +457,7 @@ Desde las actividades cotidianas en el lugar de trabajo hasta la diversión de f
 
     <!-- Section 12-->
  
-    <section class="sect12">
+    <section class="sect12" id="reservar">
 
       <h2 style="text-align: left;"> La Nueva SUV Hyundai VENUE 2023​ </h2> 
       
@@ -516,7 +496,12 @@ Desde las actividades cotidianas en el lugar de trabajo hasta la diversión de f
         
       </form>
     </section>
-    
+
+       <!--slider-->
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+   <script type="text/javascript" src="scripts/webflow.js"></script>
+   <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+   <!--slider-->
     
 <script src="/scripts/app.js"></script>
 </body>
