@@ -251,6 +251,9 @@ font-size: 20px;
      margin-left: auto;
      text-align: center;
    }
+   .mask.w-slider-mask {
+    width: 73vw;
+}
    
    .slide {
      width: 100%;
