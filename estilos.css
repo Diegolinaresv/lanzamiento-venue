@@ -560,7 +560,7 @@ figure .activo3{
   text-align: center;
 }
 .tabcontent img{
-  width:50%;
+  width:80%;
 }
 .tabcontent h3{
   padding-top: 20px;
@@ -1060,7 +1060,7 @@ input[type=submit]{
     .info-slider-responsive{margin-top:10px!important;margin-bottom: 0!important;}
     .info-slider h2{font-size: 18px;}
     .info-slider p{padding-left: 10px;padding-right: 10px;font-size: 14px;}
-    .sect2{padding: 10px;background-image: url(/img/Seccion2-movil.png)!important;background-size:cover;background-attachment:inherit;background-position: right;}
+    .sect2{padding: 10px;background-image: url(/img/Seccion2-movil.png)!important;background-size:cover;background-attachment:inherit;background-position: center}
     .sect2 h2{ font-size: 18px;}
     .sect2 p{ font-size: 14px;}
     .sect3{}
@@ -1115,7 +1115,7 @@ input[type=submit]{
   .sect12 h2{text-align: center!important;margin-left: 0px;margin-bottom: 25px; font-size: 20px;}
   input{margin-left: 70px!important;}
   input[type=submit]{border-width: 2px 2px 2px 2px;position: relative!important;padding: 15px;margin-top: 50px;}
-  .terminos{margin-top: 55px;color: white;max-width: 1400px;text-align: justify;text-align: center!important;}
+  .terminos{margin-top: 55px;color: white;max-width: 1400px;text-align: justify;padding: 35px;}
   input[type=checkbox]{ margin-left: 0px!important; margin-top: 0px!important;}
   .terminos a{font-size: 12px;}
   .terminos p{ margin-left: 0px; padding: 10px;margin-top: 20px;font-size: 12px;}
@@ -1181,7 +1181,7 @@ input[type=submit]{
       .sect12 h2{text-align: center!important;margin-left: 0px;margin-bottom: 25px; font-size: 20px;}
   input{margin-left: 70px!important;}
   input[type=submit]{border-width: 2px 2px 2px 2px;position: relative!important;padding: 15px;margin-top: 50px;}
-  .terminos{margin-top: 55px;color: white;max-width: 1400px;text-align: justify;text-align: center!important;}
+  .terminos{margin-top: 55px;color: white;max-width: 1400px;text-align: justify;padding: 45px;}
   input[type=checkbox]{ margin-left: 0px!important; margin-top: 0px!important;}
   .terminos a{font-size: 12px;}
   .terminos p{ margin-left: 0px; padding: 10px;margin-top: 20px;font-size: 12px;}
@@ -1293,7 +1293,7 @@ input[type=submit]{
       .sect12 h2{text-align: center!important;margin-left: 0px;margin-bottom: 25px; font-size: 20px;}
       input{margin-left: 70px!important;}
       input[type=submit]{border-width: 2px 2px 2px 2px;position: relative!important;padding: 15px;margin-top: 50px;}
-      .terminos{margin-top: 55px;color: white;max-width: 1400px;text-align: justify;text-align: center!important;}
+      .terminos{margin-top: 55px;color: white;max-width: 1400px;text-align: justify;padding: 55px;}
       input[type=checkbox]{ margin-left: 0px!important; margin-top: 0px!important;}
       .terminos a{font-size: 12px;}
       .terminos p{ margin-left: 0px; padding: 10px;margin-top: 20px;font-size: 12px;}
@@ -1394,7 +1394,7 @@ figure .tooltip9{left: 10%!important;top:60%!important;}
       .sect12 h2{text-align: center!important;margin-left: 0px;margin-bottom: 25px; font-size: 20px;}
       input{margin-left: 70px!important;}
       input[type=submit]{border-width: 2px 2px 2px 2px;position: relative!important;padding: 15px;margin-top: 50px;}
-      .terminos{margin-top: 55px;color: white;max-width: 1400px;text-align: justify;text-align: center!important;}
+      .terminos{margin-top: 55px;color: white;max-width: 1400px;text-align: justify;padding: 55px;}
       input[type=checkbox]{ margin-left: 0px!important; margin-top: 0px!important;}
       .terminos a{font-size: 12px;}
       .terminos p{ margin-left: 0px; padding: 10px;margin-top: 20px;font-size: 12px;}
@@ -1485,7 +1485,7 @@ figure .tooltip4, .tooltip5,.tooltip6,.tooltip7,.tooltip8,.tooltip9{width: 310px
       .sect12 h2{text-align: center!important;margin-left: 0px;margin-bottom: 25px; font-size: 20px;}
       input{margin-left: 70px!important;}
       input[type=submit]{border-width: 2px 2px 2px 2px;position: relative!important;padding: 15px;margin-top: 50px;}
-      .terminos{margin-top: 55px;color: white;max-width: 1400px;text-align: justify;text-align: center!important;}
+      .terminos{margin-top: 55px;color: white;max-width: 1400px;text-align: justify;padding: 55px;}
       input[type=checkbox]{ margin-left: 0px!important; margin-top: 0px!important;}
       .terminos a{font-size: 12px;}
       .terminos p{ margin-left: 0px; padding: 10px;margin-top: 20px;font-size: 12px;}
