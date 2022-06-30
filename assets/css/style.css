@@ -1020,6 +1020,16 @@ section {
 .rines img {
   transition: all 0.4s ease-in-out;
 }
+@media (max-width: 600px) {
+  .rines {
+    padding-top: 30px;
+    background: url("../img/Seccion4-Fondo.png") center center repeat;
+    background-size: contain;
+    background-color: #fff;
+  
+  
+  }
+}
 
 /*--------------------------------------------------------------
 # interior-3
@@ -1571,10 +1581,16 @@ section {
 
 @media (max-width: 400px) {
   .cta {
-    background: url("../img/Seccion2-movil.png") fixed center center no-repeat;
+    background: url("../img/Seccion2-movil.png")  center center no-repeat;
     padding: 120px 0;
     height: 855px;
     background-color: #000;
+  }
+  .exterior img{
+    max-width: 650px!important;
+  }
+  .interior-3 img{
+    max-width: 650px!important;
   }
 }
 
@@ -1582,16 +1598,22 @@ section {
 
 @media (max-width: 600px) {
   .cta {
-    background:  url("../img/Seccion2-movil.png") fixed center center no-repeat;
-    padding: 120px 0;
+    background:  url("../img/Seccion2-movil.png") center center no-repeat;
+    padding: 50px 0;
     background-color: #000;
 
+    }
+    .exterior img{
+      max-width: 650px!important;
+    }
+    .interior-3 img{
+      max-width: 650px!important;
     }
 }
 
 @media (min-width: 400px) {
   .cta {
-    background: url("../img/Seccion2-movil.png") fixed center center no-repeat;
+    background: url("../img/Seccion2-movil.png") center center no-repeat;
     padding: 120px 0;
     height: 855px;
     background-color: #000;
@@ -1607,6 +1629,7 @@ section {
     background-color: #000;
 
     }
+    
 }
 
 
@@ -1657,7 +1680,7 @@ section {
 
 @media (max-width: 400px) {
   .datos {
-    background: url("../img/Seccion6-movil.png")  fixed center center no-repeat;
+    background: url("../img/Seccion6-movil.png")  center center no-repeat;
     padding: 120px 0;
     height: 990px;
     background-color: #000;
@@ -1670,7 +1693,7 @@ section {
 
 @media (max-width: 600px) {
   .datos {
-    background:  url("../img/Seccion6-movil.png")  fixed center center no-repeat;
+    background:  url("../img/Seccion6-movil.png")  center center no-repeat;
     padding: 120px 0;
     background-color: #000;
 
@@ -2835,9 +2858,27 @@ ul.nacc li p {
   text-align:center;
 }
 @media (max-width:490px){
+  .interior-cj {
+    background: url("../img/Seccion4-Fondo.png")  center center no-repeat;
+    background-size: cover;
+    padding: 80px 0 20px 0;
+    position: relative;
+  }
   .interior-cj li img{
     max-width:100%;
     text-align:center;
+    display: none;
+  }
+  .interior-cj .naccs .menu div{
+    padding: 20!important;
+  }
+  .menu .img-selector{
+    max-width: 100%!important;
+    margin-right: 50px!important;
+
+  }
+  .interior-cj .gc.gc--1-of-3{
+    padding: 0!important;
   }
 }
 @media (min-width:491px) and (max-width:1000px){
